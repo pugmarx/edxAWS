@@ -1,4 +1,5 @@
 import boto3
 
-s3client = boto3.resource('s3')
-s3client.meta.client.upload_file('someFile')
+client = boto3.client('ec2')
+print(client.describe_instances())
+
